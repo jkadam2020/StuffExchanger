@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87cefa"
+    tools:context="com.example.stuffexchanger.ItemDetail">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="41dp"
+        android:text="Logged in:"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/backtbtnID"
+        android:layout_toEndOf="@+id/backtbtnID"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/usernameItemListDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:text="Price  $"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView10"
+        android:layout_toEndOf="@+id/contactID" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="Item Details"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageID"
+        android:layout_toStartOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/usernameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/imageID"
+        android:layout_toEndOf="@+id/usernameItemListDetail"
+        android:layout_marginStart="6dp"
+        android:layout_marginBottom="8dp" />
+
+    <ImageView
+        android:id="@+id/imageID"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="27dp"
+        android:layout_below="@+id/backtbtnID"
+        android:layout_alignEnd="@+id/emailTextView" />
+
+    <TextView
+        android:id="@+id/itemnameID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/usernameItemListDetail"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_marginBottom="6dp"
+        android:text="itemname"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/priceID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="price"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/descriptionID"
+        android:layout_toEndOf="@+id/usernameItemListDetail"
+        android:layout_marginStart="23dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Contact"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/postedbyID"
+        android:layout_alignStart="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/contactID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="phone"
+        android:linksClickable="true"
+        android:text="number"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignBaseline="@+id/textView12"
+        android:layout_alignBottom="@+id/textView12"
+        android:layout_alignEnd="@+id/postedbyID"
+        android:layout_marginEnd="21dp" />
+
+    <TextView
+        android:id="@+id/postedbyID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="postedby"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/descriptionID"
+        android:layout_alignStart="@+id/descriptionID" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Posted By"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignBottom="@+id/postedbyID"
+        android:layout_alignStart="@+id/backtbtnID"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/itemnameID"
+        android:layout_below="@+id/itemnameID"
+        android:layout_marginTop="28dp"
+        android:text="Description"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/descriptionID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameItemListDetail"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="21dp"
+        android:layout_toEndOf="@+id/textView10"
+        android:lines="4"
+        android:text="                                 "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="email"
+        android:linksClickable="true"
+        android:text="Email"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/contactID" />
+
+    <Button
+        android:id="@+id/RatingBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/emailTextView"
+        android:layout_alignBottom="@+id/emailTextView"
+        android:layout_alignParentEnd="true"
+        android:onClick="ratingBtnClick"
+        android:text="Rate Seller"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/backtbtnID"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="6dp"
+        android:onClick="BackBtnClick"
+        android:text="Back"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

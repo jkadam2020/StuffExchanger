@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87cefa"
+    tools:context="com.example.stuffexchanger.AddListingActivity">
+
+    <Button
+        android:id="@+id/browsebtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pricetxtview"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="53dp"
+        android:layout_toEndOf="@+id/pathtxtview"
+        android:onClick="browsebtnclick"
+        android:text="Browse"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pathtxtview"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/browsebtn"
+        android:layout_alignTop="@+id/browsebtn"
+        android:layout_toEndOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/ItemNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_toEndOf="@+id/pricetxtview"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/pricetxtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/DescriptionEditText"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="40dp"
+        android:text="Upload Photo"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/PriceEditText"
+        android:layout_marginTop="20dp"
+        android:text="Mobile"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ContactEditText"
+        android:layout_marginTop="23dp"
+        android:text="Description"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ItemNameEditText"
+        android:layout_marginTop="10dp"
+        android:text="Price"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:text="Item Name"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/PriceEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ItemNameEditText"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_marginTop="7dp"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/ContactEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/PriceEditText"
+        android:layout_alignTop="@+id/textView4"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/addbtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pathtxtview"
+        android:layout_marginTop="62dp"
+        android:layout_toEndOf="@+id/pricetxtview"
+        android:onClick="addlistingbtnclick"
+        android:text="Publish Listing"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/DescriptionEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ContactEditText"
+        android:layout_alignTop="@+id/textView7"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>
